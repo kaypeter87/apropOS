@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include <editline/readline.h>
-#include <editline/history.h>
+#include <histedit.h>
 
 /* Declare a buffer for user input of size 2048 */
 static char input[2048];
@@ -19,9 +19,9 @@ int main(int argc, char** argv) {
 
     add_history(input);
 
-    printf("No you're a %s", input);
+    printf("No you're a %s\n", input);
 
-    free(input)
+    free(input);
   }
   return 0;
 }
